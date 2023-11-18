@@ -56,5 +56,7 @@ To start 360 Media Player:
 # Credits
 
 The Coconut-XR libray is used and assists with some of the VR interactions
+
 The default 360 image was downloaded from Poly Haven: https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky
+
 Other images and icons were downloaded from Pixabay: https://pixabay.com/
