@@ -17,9 +17,9 @@ function PreviousDirectoryButton() {
 
   function returnToPreviousDirectory() {
     if (directoryHistory.length > 0) {
-      const previousDirectory = directoryHistory[directoryHistory.length - 1]
+      var previousDirectory = directoryHistory.slice(0, -1);
       const subDirectoryString = arrayToDirectoryString(previousDirectory);
-
+      console.log("subdir string: " + subDirectoryString)
       updatePageNumber(startingPageNumber);
       getDirectories(dispatch, isGetDirectoriesLocked, startingPageNumber, subDirectoryString);
       dispatch(directoryHistoryPop())
