@@ -20,6 +20,7 @@ type MediaItem = {
 
 function MediaItem({ name, dateModified, isFolder, isImage, isVideo, thumbnail, path, duration }: MediaItem) {
   let isGetDirectoriesLocked: boolean = useSelector((state: any) => state.directory.isGetDirectoriesLocked);
+  let directoryHistory: any = useSelector((state: any) => state.directory.directoryHistory);
   const [hoverCount, setHoverCount] = useState(0);
   const dispatch = useDispatch();
 
@@ -35,8 +36,9 @@ function MediaItem({ name, dateModified, isFolder, isImage, isVideo, thumbnail, 
   };
 
   const loadNewDirectory = async (name: any) => {
-    const subDirectoryString = arrayToDirectoryString([name]);
-    updatePageNumber(startingPageNumber); //reset page number
+    const newSubdirectory = [...directoryHistory, name]
+    const subDirectoryString = arrayToDirectoryString(newSubdirectory);
+    updatePageNumber(startingPageNumber); //reset page number when entering a new directory
     getDirectories(dispatch, isGetDirectoriesLocked, startingPageNumber, subDirectoryString);
     dispatch(directoryHistoryPush(name));
   }

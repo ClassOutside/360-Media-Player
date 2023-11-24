@@ -40,8 +40,8 @@ const DirectorySlice = createSlice({
   },
   reducers: {
     setCurrentTree: (state, action) => { return { ...state, currentTree: action.payload } },
-    setCompleteTree: (state, action) => { return { ...state, completeTree: action.payload } }, //Here the state object is not partially modified, it is entirely replaced, so return is needed
-    directoryHistoryPush: (state, action) => { state.directoryHistory.push(action.payload) }, //return is not needed because the state is modified, not overwritten
+    setCompleteTree: (state, action) => { return { ...state, completeTree: action.payload } },
+    directoryHistoryPush: (state, action) => { return { ...state, directoryHistory: [...state.directoryHistory, action.payload] } },
     directoryHistoryPop: (state) => { state.directoryHistory.pop() },
     updatePageNumber: (state, action) => { return { ...state, pageNumber: action.payload } },
     updateTotalPageCount: (state, action) => { return { ...state, totalPageCount: action.payload } },
