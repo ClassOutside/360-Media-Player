@@ -51,6 +51,13 @@ To start 360 Media Player:
   3. Click 'Select a directory' and browse to the folder with the photos and videos you want to view in 360
   4. Click Start
 
+------------------------------------------------------------
+# Manually Closing The Application
+
+There may be times where the application does not close properly and may remain running in the background. To manually confirm closure of the application on windows the following script may be run in a powershell window.
+
+    Get-Process -Id (Get-NetTCPConnection -LocalPort 3000, 3001).OwningProcess | Stop-Process -Force
+This will kill any processes on port 3000 or 3001, the default ports for the 360 Media Player. If your ports are different, you may update this script before running.
 
 ------------------------------------------------------------
 # Credits
