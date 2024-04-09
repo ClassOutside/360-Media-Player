@@ -8,6 +8,11 @@ The 360 Media Player maps photos and videos streamed from your computer onto a 3
 The primary intended use case for this is to view these files within Virtual Reality (VR) and Augmented Reality (AR) headsets. 
 
 ------------------------------------------------------------
+# Videos:
+Overview:    https://youtu.be/qZWxS0xsjm0?si=VbGcsPnL45t8PVQS
+Installation:https://youtu.be/81G_ACQrA34?si=a0P_MGlBU8jBmmOH
+
+------------------------------------------------------------
 # How it works:
 
 The 360 Media Player hosts a website on your local network. This means every device connected to your wifi or router should have access to this site. 
