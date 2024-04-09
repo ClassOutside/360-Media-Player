@@ -9,9 +9,9 @@ The primary intended use case for this is to view these files within Virtual Rea
 
 ------------------------------------------------------------
 # Videos:
-Overview:    https://youtu.be/qZWxS0xsjm0?si=VbGcsPnL45t8PVQS
+**Overview**:      https://youtu.be/qZWxS0xsjm0?si=VbGcsPnL45t8PVQS
 
-Installation:https://youtu.be/81G_ACQrA34?si=a0P_MGlBU8jBmmOH
+**Installation**:  https://youtu.be/81G_ACQrA34?si=a0P_MGlBU8jBmmOH
 
 ------------------------------------------------------------
 # How it works:
