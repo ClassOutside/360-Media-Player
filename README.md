@@ -73,3 +73,10 @@ The Coconut-XR libray is used and assists with some of the VR interactions
 The default 360 image was downloaded from Poly Haven: https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky
 
 Other images and icons were downloaded from Pixabay: https://pixabay.com/
+
+------------------------------------------------------------
+# Troubleshooting
+
+Under some circumstances the installer files may not make the proper configuration changes. To confirm proper configuration, identify your local IP address and make sure it appears in the application.json file for the 360 Media Player before starting it.
+
+Newer versions of some imports may cause conflicts. In this event you may try to remove the node_modules folder, and perform a clean install of the files in the package-lock.json file with the npm ci command.
